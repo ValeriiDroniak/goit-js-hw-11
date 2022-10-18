@@ -1,5 +1,5 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import refs from './refs';
+import { refs } from './refs';
 import ServerRequest from './serverRequest';
 import CreateGallery from './gallery';
 import '../sass/index.scss';
