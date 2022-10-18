@@ -5,13 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./js/index.js"></script>
+    <!-- <link rel="stylesheet" href="./sass/main.scss"> -->
 </head>
 
 <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="form__wrap">
+        <form class="search-form" id="search-form">
+            <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+            <button type="submit">
+                <svg class="search" width="18" height="18">
+                    <use href="./img/icons.svg#search"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <div class="gallery">
+        <!-- Картки зображень -->
+    </div>
+
+    <button type="button" class="load-more">Load more</button>
+
+    <script src="js/index.js" type="module"></script>
 </body>
 
 </html>

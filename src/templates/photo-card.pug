@@ -1,0 +1,16 @@
+div.photo-card
+    a.photo-link(href=largeImageURL)
+        img(src=webformatURL alt=tags loading="lazy")
+    div.info
+        p.class="info-item"
+            b Likes
+            span #{likes}
+        p.info-item
+            b Views
+            span #{views}
+        p.info-item
+            b Comments
+            span #{comments}
+        p.info-item
+            b Downloads
+            span #{downloads}
