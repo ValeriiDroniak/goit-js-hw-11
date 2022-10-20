@@ -36,6 +36,13 @@ export default class ServerRequest {
     set page(newPage) {
         this.config.params.page = newPage;
     }
+    get per_page() {
+        return this.config.params.per_page;
+    }
+
+    set per_page(number) {
+        this.config.params.per_page = number;
+    }
 
     incrementPage() {
         this.config.params.page += 1;
